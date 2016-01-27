@@ -1,0 +1,247 @@
+/* =================================================
+   Normatização CSS
+   ================================================= */
+
+body {
+    font-size: 62.5%;
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+    color: #444;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a {
+    color: #0f6176;
+    text-decoration: none;
+    font-size: 1.6em;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* =============== GRID =============== */
+
+.row, .column {
+  box-sizing: border-box;
+}
+.row:before, /* Limpando floats */
+.row:after {
+  content: " ";
+  display: table;
+}
+ .row:after {
+  clear: both;
+} /* End Limpando floats */
+.column {
+  position: relative;
+  float: left;
+}
+.column + .column {
+  margin-left: 1.6%; /*20px*/
+}
+.column-1 {
+  width: 6.86666666667%;
+}
+.column-2 {
+  width: 15.3333333333%;
+}
+.column-3 {
+  width: 23.8%;
+}
+.column-4 {
+  width: 32.2666666667%;
+}
+.column-5 {
+  width: 40.7333333333%;
+}
+.column-6 {
+  width: 49.2%;
+}
+.column-7 {
+  width: 57.6666666667%;
+}
+.column-8 {
+  width: 66.1333333333%;
+}
+.column-9 {
+  width: 74.6%;
+}
+.column-10 {
+  width: 83.0666666667%;
+}
+.column-11 {
+  width: 91.5333333333%;
+}
+.column-12 {
+  width: 100%;
+}
+
+
+/* =============== Estilos Principais =============== */
+.font-title{
+    font-family: 'Raleway', 'Open Sans', sans-serif;   
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+img, picture, video, embed {
+    max-width: 100%;
+}
+
+
+/* ======= WELCOME ======= */
+.welcome{
+    overflow: hidden;
+    background-color: #fff;
+    text-align: center;
+}
+.welcome h2{
+    text-transform: uppercase;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    font-size: 2.4em;
+    font-weight: 700;
+    color: 505050;
+    letter-spacing: 1px;
+}
+.welcome p{
+    max-width: 700px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+    color: #505050;
+    line-height: 1.5em;
+    font-size: 1.6em;
+    font-weight: normal;
+}
+.welcome .divider-short{
+    margin: 0 auto;
+    height: 0.2em;
+    width: 15em;
+    margin-bottom: 15px;
+    background-color: #0f6176;
+}
+.welcome ul li{
+    display: inline-block;
+}
+.welcome .icon{
+    width: 2.5em;
+    height: 2.5em;
+    font-size: 3.4em;
+    margin: 0 auto;
+    border-radius: 50%;
+    padding-top: 25px;
+    color: #fff;
+    background-color: #0f6176;
+    
+    -webkit-transition: all 0.4s ease-in-out;
+}
+.welcome .icon:hover{
+    color: #0f6176;
+    background-color: #e6e6e6;
+}
+.welcome h4{
+    font-size: 1.8em;
+}
+.welcome p{
+    font-size: 1.2em;
+}
+
+
+/* ======= EQUIPE ======= */
+.equipe{
+    overflow: hidden;
+    background-color: #f7f7f7;
+    padding-bottom: 4em;
+}
+.equipe h2 {
+    font-size: 2.4em;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 2.5em;
+    margin-bottom: 0.3em;
+}
+.equipe .divider-short{
+    margin: 0 auto;
+    height: 0.2em;
+    width: 15em;
+    margin-bottom: 4em;
+    background-color: #0f6176;
+}
+.equipe figure{
+    text-align: center;
+}
+.equipe h4 {
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-bottom: -0.7em;
+    text-align: center;
+}
+.equipe .team-sub{
+    font-size: 1.2em;
+    text-align: center;
+    color: #838383;
+}
+.equipe p {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.equipe .social{
+    font-size: 0.9em;
+    text-align: center;
+    margin-top: 1em;
+    padding-bottom: 4em;
+}
+.equipe .social a{
+    color: ##0f6176;
+        
+    -webkit-transition: all 0.4s ease-in-out;
+}
+.equipe .social a:hover{
+    color: #444;
+}
+.equipe ul li{
+    display: inline-block;
+    letter-spacing: 0.5em;
+}
+
+/* -- BLOCO INFO 02  */
+.info02{
+    overflow: hidden;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: linear-gradient(
+      rgba(240, 240, 240, 0.9), 
+      rgba(240, 240, 240, 0.9)
+    ), url(../img/bg-business-01.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.info02 .features{
+    float: left;
+    max-width: 66.66666666%;
+    padding-right: 15%;
+    border-right: 1px dotted #0f6176;
+}
+.info02 .features h2{
+    padding-bottom: 20px;
+    color:#0f6176;   
+    font-size: 2.4em;
+    font-weight: 700;
+    font-family: 'Raleway', 'Open Sans', sans-serif;
+}
+.info02 .features p{
+    color: #444;   
+    font-size: 1.4em;
+}
+.info02 .icon{
+    overflow: hidden; 
+    padding-top: 0.4em;
+    padding-left: 14.166666%;
+    color: #0f6176;
+    font-size: 10em;
+}

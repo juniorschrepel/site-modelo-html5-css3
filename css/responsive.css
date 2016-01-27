@@ -1,0 +1,110 @@
+/* =============================================
+   Media Queries
+   ============================================= */
+
+
+@media screen and (max-width: 1200px) {
+
+    .container {
+        padding: 0 2.4em 0 2.4em;
+    }
+
+}
+
+@media screen and (max-width: 790px) {
+    
+    /* ======= GRID ======= */
+    .column-3{
+        width: 49.2%;
+    }
+    .column-3:nth-child(odd){
+        margin-left: 0;
+    }
+    .column-4{
+        width: 48.266666%;
+    }
+    
+    
+    /* ======= WELCOME ======= */
+    .welcome .column-4:last-child p{
+        max-width: 80%;
+    }
+    .welcome .column-4:last-child{
+        width: auto;
+        margin: 0 auto;
+    }
+    
+    
+    /* ======= EQUIPE ======= */
+    .equipe .coluna{
+        width: 48%;
+        margin-bottom: 5em;
+        margin-right: 2%;
+    }
+    .equipe p{
+        margin-left: 1.5em;
+        margin-right: 1.5em;   
+    }
+    
+    
+    /* ======= INFO 02 ======= */
+    .info02 .features{
+        max-width: 100%;
+        padding-right: 0;
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+        text-align: center;
+        border-right: none;
+        border-bottom: 1px dotted #0f6176;
+    }
+    .info02 .icon{
+       overflow: visible;
+       text-align: center;
+       padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    
+    /* ======= GRID =======*/
+    .column-1,
+    .column-2,
+    .column-3,
+    .column-4,
+    .column-5,
+    .column-6,
+    .column-7,
+    .column-8,
+    .column-9,
+    .column-10,
+    .column-11,
+    .column-12 {
+        width: auto;
+        float: none;
+    }
+    .column + .column {
+        margin-left: 0;
+    }
+
+    /* ======= WELCOME ======= */
+    .welcome .coluna{
+        max-width: 100%; 
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .welcome .coluna:last-child p{
+        max-width: 100%
+    }
+    
+    
+    /* ======= EQUIPE ======= */
+    .equipe .coluna {
+        width: 100%;
+        margin-right: 0;
+    }
+    .equipe .coluna p{
+        margin-left: 0;
+        margin-right: 0; 
+    }
+    
+}
