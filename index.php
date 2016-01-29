@@ -1,18 +1,7 @@
-<!document html>
-<html>
 
-<head>
-    <meta charset="utf-8">
-    <title>Primeiro Site</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
-    <link href="css/normalize.css" rel="stylesheet" type="text/css" />
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <link href="css/responsive.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
-     
+    <?php include("header.php"); ?>
     <?php /* include("slider.php");  */?>
+       <div class="banner"></div>
         
         <!-- SECTION WELCOME -->
         <section class="welcome">
