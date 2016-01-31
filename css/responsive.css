@@ -25,6 +25,51 @@
     }
     
     
+    /* ======= HEADER ======== */
+    .menu .active {
+        display: block;
+    }
+    .menu .nav{
+        float: none;  
+        margin-top: 3.5em;
+        background:rgba(49, 49, 49, 0.7);
+    }
+    .menu .nav a{
+        color: #fff;
+    }
+    .menu .nav > li {
+        float: none;
+    }
+    .menu .nav li:hover{ 
+        background-color: rgb(31, 31, 31);
+    }
+    .menu .nav > li > .parent {
+        background-position: 95% 50%;
+    }
+    .menu .nav li li .parent {
+        background-image: url("../img/downArrow.png");
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
+    }
+    .menu .nav li li a {
+        padding-left: 3em;
+        background: #0c4a5a;
+        border-top: 1px solid #0a3e4b;
+    }
+    .menu .nav li li li a {
+        padding-left: 6em;
+        background:#0c5062;
+        border-top: 1px solid #004658;
+    }
+    .menu .nav ul {
+        display: block;
+        width: 100%;
+    }
+    .menu .nav > li.hover > ul , .nav li li.hover ul {
+        position: static;
+    }
+
+    
     /* ======= WELCOME ======= */
     .welcome .column-4:last-child p{
         max-width: 80%;

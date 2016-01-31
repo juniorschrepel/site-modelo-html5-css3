@@ -1,7 +1,6 @@
-
     <?php include("header.php"); ?>
     <?php /* include("slider.php");  */?>
-       <div class="banner"></div>
+       </div> <!-- FIM BANNER -->
         
         <!-- SECTION WELCOME -->
         <section class="welcome">
